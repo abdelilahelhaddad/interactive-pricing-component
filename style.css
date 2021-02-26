@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+}
+
+#main {
+  position: relative;
+  background: #fafbff url("./images/bg-pattern.svg") no-repeat top left;
+  background-size: 100% 60%;
+  width: 100%;
+  height: 100vh;
+}
+
+#main .wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .wrapper .label {
+  background: url("./images/pattern-circles.svg") no-repeat center center;
+  padding: 73px;
+  text-align: center;
+}
+
+#main .wrapper .card {
+  background: #fff;
+  border-radius: 10px;
+  width: 40%;
+  padding: 35px;
+}
+
+#main .wrapper .card .card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .wrapper .card .card-top .pv {
+  width: 49%;
+}
+
+#main .wrapper .card .card-top .pv p {
+  text-align: left;
+}
+
+#main .wrapper .card .card-top .prices {
+  width: 49%;
+}
+
+#main .wrapper .card .card-top .prices p {
+  text-align: right;
+}
+
+#main .wrapper .card .card-top .prices p .price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl 0, 0%, 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main .wrapper .card .card-top .range {
+  width: 100%;
+}
+
+#main .wrapper .card .card-top .range input {
+  width: 100%;
+}
+
+#main .wrapper .card .card-top .toggle-discount {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main .wrapper .card .card-top .toggle-discount .toggle-icon {
+  width: 60px;
+  height: 24px;
+  border-radius: 50px;
+  background: #cdd7ee;
+  position: relative;
+}
+
+#main .wrapper .card .card-top .toggle-discount .toggle-icon .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 3px;
+}
+
+#main .wrapper .card .card-top .toggle-discount .discount .dis {
+  color: #ff8c66;
+  background: #feece7;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+#main .wrapper .card .line {
+  width: 100%;
+  height: 2px;
+  background: #eaeefb;
+}
+/*# sourceMappingURL=style.css.map */
