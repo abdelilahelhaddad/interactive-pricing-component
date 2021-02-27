@@ -82,30 +82,27 @@ li {
 
 #main .wrapper .card .card-top .prices {
   width: 49%;
-  margin-bottom: 1.5rem;
-}
-
-#main .wrapper .card .card-top .prices p {
-  text-align: right;
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-#main .wrapper .card .card-top .prices p .price {
+#main .wrapper .card .card-top .prices .price {
   font-size: 2rem;
   font-weight: 800;
-  color: hsl 0, 0%, 100% !important;
+  color: hsl 0, 0%, 100%;
+  padding-right: .3rem;
+}
+
+#main .wrapper .card .card-top .prices p {
+  text-align: right;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-right: .4rem;
 }
 
 #main .wrapper .card .card-top .range {

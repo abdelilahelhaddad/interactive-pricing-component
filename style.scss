@@ -42,7 +42,6 @@ li {
     position: absolute;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
 
     .label {
@@ -77,21 +76,20 @@ li {
 
         .prices {
           width: 49%;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1rem;
+          display: flex;
+          justify-content: flex-end;
+
+          .price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: $Pricing-Component-Background;
+            padding-right: .3rem;
+          }
 
           p {
             text-align: right;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-
-            .price {
-              font-size: 2rem;
-              font-weight: 800;
-              color: $Pricing-Component-Background !important;
-              align-self: center;
-              padding-right: .4rem;
-            }
+            align-self: center;
           }
         }
 
