@@ -11,6 +11,11 @@ body {
   font-size: 15px;
 }
 
+p,
+li {
+  color: #858fad;
+}
+
 #main {
   position: relative;
   background: #fafbff url("./images/bg-pattern.svg") no-repeat top left;
@@ -44,8 +49,10 @@ body {
 #main .wrapper .card {
   background: #fff;
   border-radius: 10px;
-  width: 40%;
+  width: 35%;
   padding: 35px;
+  -webkit-box-shadow: 0px 12px 15px 2px rgba(234, 238, 251, 0.7);
+          box-shadow: 0px 12px 15px 2px rgba(234, 238, 251, 0.7);
 }
 
 #main .wrapper .card .card-top {
@@ -64,35 +71,69 @@ body {
 
 #main .wrapper .card .card-top .pv {
   width: 49%;
+  padding-bottom: 1rem;
 }
 
 #main .wrapper .card .card-top .pv p {
   text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 #main .wrapper .card .card-top .prices {
   width: 49%;
+  margin-bottom: 1.5rem;
 }
 
 #main .wrapper .card .card-top .prices p {
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #main .wrapper .card .card-top .prices p .price {
   font-size: 2rem;
   font-weight: 800;
-  color: hsl 0, 0%, 100%;
+  color: hsl 0, 0%, 100% !important;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-right: .4rem;
 }
 
 #main .wrapper .card .card-top .range {
   width: 100%;
+  margin-bottom: 2.5rem;
 }
 
-#main .wrapper .card .card-top .range input {
+#main .wrapper .card .card-top .range .slider {
+  -webkit-appearance: none;
   width: 100%;
+  height: 7px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #a5f3eb), color-stop(50%, #eaeefb));
+  background: linear-gradient(90deg, #a5f3eb 50%, #eaeefb 50%);
+  outline: none;
+  border-radius: 12px;
+}
+
+#main .wrapper .card .card-top .range .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: url("./images/icon-slider.svg") no-repeat center center, #10d5c2;
+  background-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 20px 1px rgba(16, 213, 194, 0.83);
+          box-shadow: 0px 10px 20px 1px rgba(16, 213, 194, 0.83);
 }
 
 #main .wrapper .card .card-top .toggle-discount {
@@ -105,17 +146,25 @@ body {
           justify-content: space-between;
 }
 
+#main .wrapper .card .card-top .toggle-discount > :first-child {
+  margin-left: 5rem;
+}
+
+#main .wrapper .card .card-top .toggle-discount p {
+  font-size: 12px;
+}
+
 #main .wrapper .card .card-top .toggle-discount .toggle-icon {
-  width: 60px;
-  height: 24px;
+  width: 35px;
+  height: 18px;
   border-radius: 50px;
   background: #cdd7ee;
   position: relative;
 }
 
 #main .wrapper .card .card-top .toggle-discount .toggle-icon .circle {
-  width: 20px;
-  height: 20px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background: #fff;
   position: absolute;
@@ -130,12 +179,69 @@ body {
   color: #ff8c66;
   background: #feece7;
   border-radius: 30px;
-  padding: 3px;
+  padding: 2px 6px;
+  font-size: 12px;
+  text-align: center;
 }
 
 #main .wrapper .card .line {
   width: 100%;
   height: 2px;
   background: #eaeefb;
+  margin: 2rem 0;
+}
+
+#main .wrapper .card .card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .wrapper .card .card-bottom .features {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#main .wrapper .card .card-bottom .features .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main .wrapper .card .card-bottom .features .list img {
+  margin-right: 1rem;
+}
+
+#main .wrapper .card .card-bottom .features .list li {
+  list-style: none;
+  margin-bottom: .5rem;
+}
+
+#main .wrapper .card .card-bottom .cta {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .wrapper .card .card-bottom .cta button {
+  padding: .8rem 3rem;
+  background: #293356;
+  color: #bdccff;
+  border: none;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=style.css.map */
