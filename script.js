@@ -13,6 +13,6 @@ range.addEventListener("mousemove", () => {
   let sliderValue = range.value;
   pageviews.innerHTML = pageViewsVal[sliderValue];
   price.innerHTML = priceVal[sliderValue];
-  let sliderColor = 'linear-gradient(90deg, $Full-Slider-Bar' + sliderValue + '%, $Empty-Slider-Bar' + sliderValue +'%)';
+  let sliderColor = `linear-gradient(90deg, rgb(165,243,235) ${(sliderValue * 25)}%, rgb(234,238,251) ${(sliderValue * 25)}%)`;
   range.style.background = sliderColor;
 });
