@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
 
 $Full-Slider-Bar: hsl(174, 77%, 80%);
-$Slider-Backround: hsl(174, 86%, 45%);
+$Slider-Background: hsl(174, 86%, 45%);
 $Discount-Background: hsl(14, 92%, 95%);
 $Light-Red-Discount-Text: hsl(15, 100%, 70%);
 $Pale-Blue-CTA-Text: hsl(226, 100%, 87%);
@@ -111,11 +111,11 @@ li {
             appearance: none;
             width: 30px;
             height: 30px;
-            background: url('./images/icon-slider.svg') no-repeat center center, $Slider-Backround;
+            background: url('./images/icon-slider.svg') no-repeat center center, $Slider-Background;
             background-size: 20px;
             border-radius: 50%;
             cursor: pointer;
-            box-shadow: 0px 10px 20px 1px rgba($Slider-Backround, 0.83);
+            box-shadow: 0px 10px 20px 1px rgba($Slider-Background, 0.83);
 
             &:hover {
               opacity: .7;
@@ -158,6 +158,14 @@ li {
 
             &:hover {
               background: $Full-Slider-Bar;
+            }
+
+            &.active {
+              background: $Slider-Background;
+
+              .circle.active {
+                left: 52%;
+              }
             }
 
           }

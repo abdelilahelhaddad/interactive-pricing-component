@@ -181,6 +181,14 @@ li {
   background: #a5f3eb;
 }
 
+#main .wrapper .card .card-top .toggle-discount .toggle-icon.active {
+  background: #10d5c2;
+}
+
+#main .wrapper .card .card-top .toggle-discount .toggle-icon.active .circle.active {
+  left: 52%;
+}
+
 #main .wrapper .card .card-top .toggle-discount .discount .dis {
   color: #ff8c66;
   background: #feece7;
