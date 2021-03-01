@@ -91,7 +91,7 @@ li {
           justify-content: flex-end;
 }
 
-#main .wrapper .card .card-top .prices .price {
+#main .wrapper .card .card-top .prices .price, #main .wrapper .card .card-top .prices .dollar {
   font-size: 2rem;
   font-weight: 800;
   color: hsl 0, 0%, 100%;
