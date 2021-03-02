@@ -48,6 +48,7 @@ li {
       background: url('./images/pattern-circles.svg') no-repeat center center;
       padding: 73px;
       text-align: center;
+      color: $Text-CTA-Background;
     }
 
     .card {
@@ -80,7 +81,8 @@ li {
           display: flex;
           justify-content: flex-end;
 
-          .price,.dollar {
+          .price,
+          .dollar {
             font-size: 2rem;
             font-weight: 800;
             color: $Pricing-Component-Background;
@@ -229,6 +231,88 @@ li {
             &:hover {
               color: #fff;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:375px) {
+  #main {
+
+    .wrapper {
+
+      .label {
+        padding: 50px 0;
+        margin-top: 2rem;
+
+        h1 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: .8rem;
+          padding: 0 6rem;
+        }
+      }
+
+      .card {
+        width: 92%;
+        padding: 30px;
+
+        .card-top {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .pv {
+            order: 1;
+
+            p {
+              text-align: center;
+            }
+          }
+
+          .prices {
+            order: 3;
+            justify-content: center;
+          }
+
+          .range {
+            order: 2;
+          }
+
+          .toggle-discount {
+            order: 4;
+
+            &>:first-child {
+              margin-left: 1.5rem;
+            }
+
+            p {
+              font-size: 10px;
+            }
+
+            .discount {
+              .hidd {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .card-bottom {
+          flex-direction: column;
+
+          .features {
+            text-align: center;
+          }
+
+          .cta {
+            justify-content: center;
+            margin-top: 1rem;
           }
         }
       }

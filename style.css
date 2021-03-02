@@ -44,6 +44,7 @@ li {
   background: url("./images/pattern-circles.svg") no-repeat center center;
   padding: 73px;
   text-align: center;
+  color: #293356;
 }
 
 #main .wrapper .card {
@@ -91,7 +92,8 @@ li {
           justify-content: flex-end;
 }
 
-#main .wrapper .card .card-top .prices .price, #main .wrapper .card .card-top .prices .dollar {
+#main .wrapper .card .card-top .prices .price,
+#main .wrapper .card .card-top .prices .dollar {
   font-size: 2rem;
   font-weight: 800;
   color: hsl 0, 0%, 100%;
@@ -262,5 +264,85 @@ li {
 
 #main .wrapper .card .card-bottom .cta button:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  #main .wrapper .label {
+    padding: 50px 0;
+    margin-top: 2rem;
+  }
+  #main .wrapper .label h1 {
+    font-size: 1.3rem;
+  }
+  #main .wrapper .label p {
+    font-size: .8rem;
+    padding: 0 6rem;
+  }
+  #main .wrapper .card {
+    width: 92%;
+    padding: 30px;
+  }
+  #main .wrapper .card .card-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main .wrapper .card .card-top .pv {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #main .wrapper .card .card-top .pv p {
+    text-align: center;
+  }
+  #main .wrapper .card .card-top .prices {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main .wrapper .card .card-top .range {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #main .wrapper .card .card-top .toggle-discount {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  #main .wrapper .card .card-top .toggle-discount > :first-child {
+    margin-left: 1.5rem;
+  }
+  #main .wrapper .card .card-top .toggle-discount p {
+    font-size: 10px;
+  }
+  #main .wrapper .card .card-top .toggle-discount .discount .hidd {
+    display: none;
+  }
+  #main .wrapper .card .card-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main .wrapper .card .card-bottom .features {
+    text-align: center;
+  }
+  #main .wrapper .card .card-bottom .cta {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
