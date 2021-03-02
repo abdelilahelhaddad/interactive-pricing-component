@@ -16,25 +16,19 @@ range.addEventListener("mousemove", () => {
   //Change range background color when sliding
   let sliderColor = `linear-gradient(90deg, rgb(165,243,235) ${(sliderValue * 25)}%, rgb(234,238,251) ${(sliderValue * 25)}%)`;
   range.style.background = sliderColor;
-
+  //Price and Page Views
   if (toggle.classList.contains("active")) {
     plan.innerHTML = "/year";
-    pvVal = ((pageViewsVal[sliderValue]) * 12);
+    let pvVal = ((pageViewsVal[sliderValue]) * 12);
     pageviews.innerHTML = pvVal;
-    prVal = ((priceVal[sliderValue] * 12) - (25/100));
+    let prVal = ((priceVal[sliderValue] * 12) - (25/100));
     price.innerHTML = Math.floor(prVal);
-    // if (pvVal >=1000 ) {
-    //   pageviews.innerHTML = pvVal / 1000;
-    //   pv.innerHTML = "M Pageviews";
-    // }
   }else{
     plan.innerHTML = "/month";
-    pageviews.innerHTML = pageViewsVal[sliderValue];
-    price.innerHTML = priceVal[sliderValue];
-    if (pageviews.value >=1000 ) {
-      pageviews.innerHTML = (pageviews.value / 1000);
-      pv.innerHTML = "M Pageviews";
-    }
+    pvVal = pageViewsVal[sliderValue];
+    pVal = priceVal[sliderValue];
+      pageviews.innerHTML = pvVal;
+      price.innerHTML = pVal;
   }
 });
 
